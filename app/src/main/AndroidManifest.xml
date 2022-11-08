@@ -13,6 +13,34 @@
         android:theme="@style/Theme.BlueGymProject"
         tools:targetApi="31">
         <activity
+            android:name=".AdminDashboard"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".HomeScreen"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Users"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".FirstPage"
             android:exported="true">
             <intent-filter>
@@ -20,13 +48,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity
-            android:name=".MainActivity"
-             >
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
