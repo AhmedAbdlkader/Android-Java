@@ -10,42 +10,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register User"
+        android:text="Login User"
         android:textStyle="bold"
         android:textSize="30dp"
         android:gravity="center"
         android:layout_margin="20sp"
         />
 
-    <EditText
-        android:id="@+id/editFirstName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="First Name"
-        android:layout_margin="20sp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="142dp" />
-
-    <EditText
-        android:id="@+id/editLastName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:hint="Last Name"
-        android:layout_margin="20sp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="219dp" />
-
-    <EditText
-        android:id="@+id/editPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:layout_margin="20sp"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="292dp" />
 
     <EditText
         android:id="@+id/editEmail"
@@ -57,14 +28,17 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="377dp" />
 
-    <Button
-        android:id="@+id/register"
+    <EditText
+        android:id="@+id/editPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:hint="Password"
+        android:inputType="textPassword"
         android:layout_margin="20sp"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="582dp" />
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+
 
     <Button
         android:id="@+id/login"
@@ -74,8 +48,6 @@
         android:layout_margin="20sp"
         tools:layout_editor_absoluteX="142dp"
         tools:layout_editor_absoluteY="582dp" />
-
-
 
 
 
