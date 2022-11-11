@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/dd"
+        android:title="les Abonnements "
+        />
+    <item
+        android:title="les coachs"
+        />
+    <item
+        android:title="les produits"
+        />
+    <item
+        android:id="@+id/regime"
+            android:title="Regime"/>
+
+</menu>
