@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class Imc extends AppCompatActivity {
 EditText Taille;
@@ -26,11 +27,28 @@ Button btn;
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int t = Integer.parseInt(Taille.getText().toString());
-                int p = Integer.parseInt(poids.getText().toString());
+                Float t = Float.parseFloat(Taille.getText().toString());
+                Float p = Float.parseFloat(poids.getText().toString());
+                float S =p/(t*t);
+                final TextView mTextView = (TextView) findViewById(R.id.valeur);
+                if(S<18.5)
+                {
+                    mTextView.setText(String.valueOf(S)+" Maigreur");
+                }
+                else
+                {
+                    if( S>18.5 && S<30)
+                    {
+                        mTextView.setText(String.valueOf(S)+" Idéal");
 
+                    }
+                    else
+                    {
+                        mTextView.setText(String.valueOf(S)+" You are FaT");
+                    }
+                }
 
-                System.out.println("dcdcd"+t);
+                System.out.println("dcdcd"+S);
 
 
 
