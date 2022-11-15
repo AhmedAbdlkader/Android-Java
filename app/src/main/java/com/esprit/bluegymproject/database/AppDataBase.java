@@ -6,7 +6,9 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
+import com.esprit.bluegymproject.dao.CoachDao;
 import com.esprit.bluegymproject.dao.UserDao;
+import com.esprit.bluegymproject.entity.Coach;
 import com.esprit.bluegymproject.entity.User;
 
 
@@ -14,7 +16,13 @@ import com.esprit.bluegymproject.entity.User;
 public abstract class AppDataBase extends RoomDatabase {
 
     private static AppDataBase instance;
+
     public abstract UserDao userDao();
+
+
+
+
+
 
     public static AppDataBase getAppDatabase(Context context) {
         if (instance == null) {
