@@ -13,7 +13,7 @@ import android.widget.Button;
 
 public class Regimes extends AppCompatActivity {
 
-    Button Imcbtn , yourButton;
+    Button Imcbtn , yourButton,proteine,coach,regime,abonnement,home;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +22,14 @@ public class Regimes extends AppCompatActivity {
         setSupportActionBar(toolbar);
         Imcbtn =findViewById(R.id.IMC);
 
-         yourButton =findViewById(R.id.fat);
+
+        proteine=findViewById(R.id.proteine);
+        coach=findViewById(R.id.coach);
+        regime=findViewById(R.id.regime);
+        abonnement=findViewById(R.id.abonnement);
+        home=findViewById(R.id.home);
+
+        yourButton =findViewById(R.id.fat);
         yourButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 startActivity(new Intent(Regimes.this,Fatlose.class));
@@ -34,6 +41,26 @@ public class Regimes extends AppCompatActivity {
                 startActivity(new Intent(Regimes.this,Imc.class));
             }
         });
+
+
+
+        regime.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(Regimes.this,Regimes.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
+            }
+        });
+        abonnement.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(Regimes.this,Abn.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
+            }
+        });
+
+        home.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(Regimes.this,HomeScreen.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
+            }
+        });
+
 
 
 
