@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class AdminDashboard extends AppCompatActivity {
-    Button yourButton,co;
+    Button yourButton,co ,abnbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +29,14 @@ public class AdminDashboard extends AppCompatActivity {
             }
         });
 
+        abnbtn =findViewById(R.id.abnn);
+        abnbtn.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(AdminDashboard.this,AddAbn.class));
+            }
+        });
 
     }
+
+
 }
