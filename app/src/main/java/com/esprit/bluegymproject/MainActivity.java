@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 user.setLastName(lastname.getText().toString());
                 user.setPassword(pwd.getText().toString());
                 user.setEmail(email.getText().toString());
-                user.setRole("ADMIN");
+                user.setRole("USER");
                 if(validateInput(user)){
                     // insert operation
                     AppDataBase appDataBase = AppDataBase.getAppDatabase(getApplicationContext());
