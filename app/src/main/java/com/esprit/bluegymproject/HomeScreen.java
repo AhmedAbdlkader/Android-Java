@@ -62,7 +62,12 @@ public class HomeScreen extends AppCompatActivity {
                 break;
             case R.id.regime:
                 startActivity(new Intent( this, Regimes.class));
-                break;
+
+    break;
+            case R.id.adviceitem:
+                startActivity(new Intent( this, Advicemain.class));
+
+
         }
         return true;
     }

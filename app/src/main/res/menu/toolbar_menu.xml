@@ -16,5 +16,8 @@
     <item
         android:id="@+id/regime"
             android:title="Regime"/>
+    <item
+        android:id="@+id/adviceitem"
+        android:title="Advice"/>
 
 </menu>
