@@ -17,7 +17,7 @@ public class AdminDashboard extends AppCompatActivity {
           co = findViewById(R.id.Coachbtn);
         co.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                startActivity(new Intent(AdminDashboard.this,listProduit.class));
+                startActivity(new Intent(AdminDashboard.this,CoachAdmin.class));
             }
         });
 

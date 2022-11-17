@@ -41,11 +41,15 @@ public class ProduitAdapter extends RecyclerView.Adapter<ProduitAdapter.MyViewHo
         Intent intent = new Intent(context,listProduit.class);
         holder.nom.setText(produits.get(position).getName());
         holder.role.setText(produits.get(position).getDescription());
+        holder.marque.setText(produits.get(position).getMarque());
+        holder.price.setText(produits.get(position).getPrice());
 
 
         holder.itemView.setOnClickListener(e->{
             intent.putExtra("name",produits.get(position).getName());
             intent.putExtra("description",produits.get(position).getDescription());
+            intent.putExtra("marque",produits.get(position).getMarque());
+            intent.putExtra("price",produits.get(position).getPrice());
 
             context.startActivity(intent);
         });
@@ -60,13 +64,15 @@ public class ProduitAdapter extends RecyclerView.Adapter<ProduitAdapter.MyViewHo
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView nom,role;
+        TextView nom,role,marque,price;
         //ImageView avatar;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             nom = itemView.findViewById(R.id.name);
             role = itemView.findViewById(R.id.description);
+            marque = itemView.findViewById(R.id.marque);
+            price = itemView.findViewById(R.id.price);
 
 
 

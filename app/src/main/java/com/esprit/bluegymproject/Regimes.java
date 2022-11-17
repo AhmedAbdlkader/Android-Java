@@ -60,6 +60,11 @@ public class Regimes extends AppCompatActivity {
                 startActivity(new Intent(Regimes.this,HomeScreen.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
             }
         });
+        proteine.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View v){
+                startActivity(new Intent(Regimes.this,listProduit.class).addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION));
+            }
+        });
 
 
 
